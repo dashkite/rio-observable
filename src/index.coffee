@@ -5,7 +5,7 @@ import { Daisho } from "@dashkite/katana"
 
 Observable =
 
-  get: K.poke ( observable ) -> observable.get()
+  get: Ks.poke ( observable ) -> observable.get()
 
   update: ( fx ) ->
     mutator = Fn.flow fx

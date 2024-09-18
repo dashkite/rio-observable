@@ -12,7 +12,7 @@ Observable =
     ( daisho ) ->
       observable = daisho.peek()
       await observable.update ( data ) ->
-        daisho.push data
+        daisho.poke data
         daisho = await mutator daisho
         do daisho.pop
       daisho
@@ -33,8 +33,7 @@ Observable =
     # observable = await Registry.get "sansa.editor.state"
     observable.cancel handle.observer
 
-  assign: K.peek ( observable, update ) ->
-    observable.update ( data ) -> Object.assign data, update
+  assign: K.peek ( observable, update ) -> observable.assign update
 
   pop: K.push ( observable ) -> observable.pop()
 

@@ -46,6 +46,13 @@ Observable =
 
   assign: K.peek Fn.binary do ->
     ( Generic.make "Observable.assign" )
+
+      # if get an unassignable value (ex: null) just ignore
+      .define [( -> true ), Object ], 
+        ( _, observable ) -> observable
+      .define [( -> true ), Obj.has "observable" ], 
+        ( _, { observable }) -> observable
+
       .define [ Object, Object ], ( update, observable ) ->
         observable.assign update
       .define [ Object, Obj.has "observable" ], ( update, { observable }) -> 

@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      '@dashkite/generic':
+        specifier: link:../generic
+        version: link:../generic
       '@dashkite/joy':
         specifier: ^0.3.16
         version: 0.3.16

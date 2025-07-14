@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@dashkite/generic':
-        specifier: link:../generic
-        version: link:../generic
+        specifier: 0.3.0
+        version: 0.3.0
       '@dashkite/joy':
         specifier: ^0.3.16
         version: 0.3.16
@@ -598,6 +598,9 @@ packages:
   '@dashkite/assert@0.1.4':
     resolution: {integrity: sha512-OLOzI/lA+EwCh6znSexGAG1V4bkaT5gU04xl6ApEluv5jICnHhinZ707MObu+jhVVJ9uHDDlG85O+Afn1aTQoQ==}
 
+  '@dashkite/generic@0.3.0':
+    resolution: {integrity: sha512-A4eHFbIZwrrZmY0//KMiYKHaBUPxUA0PA2QhNZCWC+i11WtPSk6IDuPRkafbFYkmvpj80Gmr4Qznn3ASJIQP1A==}
+
   '@dashkite/genie-clean@0.2.0':
     resolution: {integrity: sha512-1L6Rzoiu7yRixhI6uPTCNSo3wHx/y2RgVlnUDAdO3I4TBCeU1h0Kiytr32ZCK7i3BCatObAdWJt0+9Nc3ZSUIw==}
 
@@ -614,6 +617,9 @@ packages:
 
   '@dashkite/joy@0.3.16':
     resolution: {integrity: sha512-dsU0us4j1Pb+zceoBvLbnZ2PbmULkJUtM2vtWLxKmoc1DE4w9SVTiPTe6JWvF0A0vk90ldv+Lc9qEA5x3O+DtQ==}
+
+  '@dashkite/joy@0.5.0':
+    resolution: {integrity: sha512-kaDNKKS6v5r3vukOkh54aarrhiTHwbcKZZW8eDav5FhT6u8RRrmSaFeAbwLzGntdPScaEhqg/PLrvtPHOy9OlQ==}
 
   '@dashkite/kaiko@0.3.3':
     resolution: {integrity: sha512-XnAvVr9y2MsDqMLr4A24vkLF7Iuq3E8RjHEEpqhe29P5NevVX9jXKcXUStNMp9MSJbjHd2pqUNiM5Vvdja9ggg==}
@@ -2105,6 +2111,10 @@ snapshots:
     dependencies:
       '@dashkite/joy': 0.3.16
 
+  '@dashkite/generic@0.3.0':
+    dependencies:
+      '@dashkite/joy': 0.5.0
+
   '@dashkite/genie-clean@0.2.0':
     dependencies:
       '@dashkite/masonry': 0.13.0
@@ -2143,6 +2153,8 @@ snapshots:
       - '@swc/helpers'
 
   '@dashkite/joy@0.3.16': {}
+
+  '@dashkite/joy@0.5.0': {}
 
   '@dashkite/kaiko@0.3.3': {}
 

@@ -1,6 +1,6 @@
 {
   "name": "@dashkite/rio-observable",
-  "version": "0.9.21",
+  "version": "0.9.22",
   "description": "Rio combinators for use with @dashkite/observable",
   "keywords": [],
   "homepage": "https://github.com/dashkite/rio-observable#readme",
